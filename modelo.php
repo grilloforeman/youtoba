@@ -190,7 +190,43 @@ Class Search
    
 }
 
+Class Exibirindex  
 
+{
+
+      public static function Exibir($pSearch1, $exibir)
+
+   {
+     $sql = "SELECT nome FROM videos where tag1 LIKE '%$pSearch1%'";
+     $resultado_login1 = mysqli_query($exibir, $sql) or die("Erro no banco de dados!");
+    if  ($resultado_login1->num_rows > 0){
+      $resultados = array();
+      while($row = $resultado_login1->fetch_assoc()) {
+       $resultados[] = $row;
+      }
+     foreach ($resultados as $resultado) {
+      preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $resultado["nome"], $match);
+         echo   "<div class=\"card\" style=\"width: 21rem;\">
+         <img class=\"card-img-top\" src=http://img.youtube.com/vi/{$match[1]}/0.jpg alt=\"Card image cap\">
+         <div class=\"card-body\">
+           <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card1\'s content.</p>
+         </div>
+          <a href={$resultado["nome"]}> link</a>
+       </div>
+       </br>" . '</br>';
+      } 
+      
+      }else {
+         echo "0 resultados";
+      }
+
+
+
+
+    }
+    
+   
+}
 
 
 

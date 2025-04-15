@@ -33,6 +33,30 @@ class Controller
      }   
 
 
+     public function exibir_index($exibir) 
+     {
+ 
+         
+    
+ 
+ 
+ 
+         //PEga os dados  a Model para que seja realizado a validadao
+         $search = " ";
+
+
+
+         //PEga os dados  a Model para que seja realizado a validadao
+         $verrr = Exibirindex::Exibir("$search", $exibir);
+         
+          
+   
+ 
+ 
+ 
+ 
+ 
+      }   
 }
 
 
