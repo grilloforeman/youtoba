@@ -168,16 +168,15 @@ Class Search
       }
      foreach ($resultados as $resultado) {
       preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $resultado["nome"], $match);
-         echo   "<div class=\"card\" style=\"width: 18rem;\">
+         echo   "<div class=\"card\" style=\"width: 21rem;\">
          <img class=\"card-img-top\" src=http://img.youtube.com/vi/{$match[1]}/0.jpg alt=\"Card image cap\">
          <div class=\"card-body\">
            <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card1\'s content.</p>
          </div>
-          <a href={$resultado["nome"]}> link</a>
+          <a href=exibir.php?tar={$resultado["nome"]}> link</a>
        </div>
        </br>" . '</br>';
       } 
-      
       }else {
          echo "0 resultados";
       }
@@ -237,7 +236,7 @@ Class Exibirindex
 
 //$trar = new Usera("17", "foda", "33", "tagmail.com", "V", "passei");
 //Bada::Inserir($trar, $conn);
-//$tuba = new Tuba(6, "https://www.youtube.com/watch?v=M_8ZJEahxwk&pp=ygUPZ29sIDIuOGtnIHR1cmJv", "gol turbo", "cars");
+//$tuba = new Tuba(6, "https://www.youtube.com/watch?v=_bjguqhxI9I", "IIIIIa", "music");
 
 //Tubabd::Inserir($tuba, $conn);
 
