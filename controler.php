@@ -1,7 +1,6 @@
 <?php
-
-include 'modelo.php';
-include 'db.php';
+include "modelo.php";
+include "db.php";
 class Controller 
 {
 
@@ -16,47 +15,37 @@ class Controller
 
         //PEga os dados  a Model para que seja realizado a validadao
         $verrr = Search::Exibir("$search", $exibir);
-        
-         
-             //echo "<a href='$value'> lixo</a>" .PHP_EOL;
-
-
-        
-        // $view = new View();
-        //$view->exibir($verrr);
-       
-
-
-
-
-
-     }   
+     }
 
 
      public function exibir_index($exibir) 
      {
- 
-         
-    
- 
- 
- 
-         //PEga os dados  a Model para que seja realizado a validadao
-         $search = " ";
+
+         //PEga os dados  a Model para que seja realizado a validada
+        // $search = "";
 
 
 
-         //PEga os dados  a Model para que seja realizado a validadao
-         $verrr = Exibirindex::Exibir("$search", $exibir);
-         
-          
-   
- 
- 
- 
- 
- 
-      }   
+$verrr = Exibirindex::Exibir("", $exibir);          
+      }
+
+
+	public function inserir($exibir) {
+
+$pegarid = $_POST['id'];
+$pegarurl = $_POST['url'];
+$pegartag = $_POST['tag1'];
+$pegartag2 = $_POST['tag2'];
+
+
+
+$tuba = new Tuba($pegarid, $pegarurl, $pegartag, $pegartag2);
+
+Tubabd::Inserir($tuba, $exibir);
+
+
+
+}
 }
 
 

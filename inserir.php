@@ -9,7 +9,6 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
 h3 {
 font-family: "Roboto Condensed", serif;
 font-size: 46px;
@@ -47,7 +46,7 @@ color: black;
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#"></a></li>
-  <li><a class="dropdown-item" href="inserir.php">INSERIR</a></li>
+  <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
@@ -64,61 +63,81 @@ color: black;
   </div>
 </nav>
 
-        
-
 <div class="container text-center">
   <div class="row">
     <div class="col-lg-6">
 <h3> HiGLIGHTS PORRADA</h3>
-  
+////////////////////////////////////////////////////////////////////////////
 
-
-</div>
- 
-    <div class="col-lg-4">
-<h3> O</h3>
+<form action="inserir.php" method="POST">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">ID</label>
+      <input type="text" class="form-control" id="id" placeholder="ID" name="id" value="6">
     </div>
-    <div class="col-lg-4">
-
-//
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">urlvideoyoutube</label>
+      <input type="text" class="form-control" id="url" placeholder="URL" name="url">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">TAG1</label>
+    <input type="text" class="form-control" id="tag1" placeholder="TAG1" name="tag1">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">TAG2</label>
+    <input type="text" class="form-control" id="tag2" placeholder="TAG2" name="tag2">
+  </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Entrar</button>
+</form>
 </div>
-</div>
-<div class="container text-center">
-  <div class="row">
-  <?php
-$acao = $_POST['search'] ?? null;
+<div class="col-lg-6">
 
 
-include("controler.php");
-include("db.php");
-include("view.php");
+
+
+
+<?php
+ preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $_POST["url"], $match);
+         echo   "<div class=\"card\" my-5 style=\"width: 21rem;\">
+         <img class=\"card-img-top\" src=http://img.youtube.com/vi/{$match[1]}/0.jpg alt=\"Card image cap\">
+     </div>";
+?>    
+
+
+
+
+
+
+
+<?php  
+
+
+$acao = $_POST['url'] ?? null;
+
 
 if(isset($acao)){
-	
+
+include "controler.php";
+include "db.php";
+include "view.php";
+
+
 
 $oi = new Controller();
-$oi->exibir($conn);
-$ui = new View();
-$ui->searchexibir();
-
-
+$oi->inserir($conn);
 }
-
-?> 
-  <h3> SOMENTE VIDEOS SINISTROS VEM MAIS POR AI ..BETA</h3>
+?>
 </div>
-  </div>
-    </div>
+
+
    
     </div>
-    
-
-    </div>
-  </div>
-</div>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+  </body>
   </body>
 </html>
 

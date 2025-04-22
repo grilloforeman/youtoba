@@ -1,6 +1,5 @@
 <?php
-
-require("db.php");
+include  "db.php";
 
 class Usera 
 {
@@ -139,7 +138,7 @@ Class Tubabd
      $sql = "INSERT INTO videos (id, nome, tag1, tag2) VALUES ('{$pTuba->getId()}', '{$pTuba->getNome()}', '{$pTuba->getTag1()}', '{$pTuba->getTag2()}')";
        if (mysqli_query($exibirr, $sql))
       {
-          echo "New record created successfully";
+          echo "SUcefully GRAVADO COM SUCEFULL";
       }
        else
       {
@@ -168,7 +167,7 @@ Class Search
       }
      foreach ($resultados as $resultado) {
       preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $resultado["nome"], $match);
-         echo   "<div class=\"card\" style=\"width: 21rem;\">
+         echo   "<div class=\"card\" my-5 style=\"width: 21rem;\">
          <img class=\"card-img-top\" src=http://img.youtube.com/vi/{$match[1]}/0.jpg alt=\"Card image cap\">
          <div class=\"card-body\">
            <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card1\'s content.</p>
@@ -236,7 +235,7 @@ Class Exibirindex
 
 //$trar = new Usera("17", "foda", "33", "tagmail.com", "V", "passei");
 //Bada::Inserir($trar, $conn);
-//$tuba = new Tuba(6, "https://www.youtube.com/watch?v=_bjguqhxI9I", "IIIIIa", "music");
+//$tuba = new Tuba(6, "https://www.youtube.com/watch?v=unRpqcrDDws", "I STREAMMING", "I");
 
 //Tubabd::Inserir($tuba, $conn);
 

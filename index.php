@@ -1,4 +1,4 @@
-<!Doctype html>                                                                                     
+<!Doctype html>
 <html lang="PT-BR">
   <head>
     <meta charset="utf-8">
@@ -23,7 +23,7 @@ color: black;
 </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-danger">
+    <nav class="navbar navbar-expand-lg bg-danger mb-3">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Youtoba</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,9 +46,9 @@ color: black;
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#"></a></li>
-  <li><a class="dropdown-item" href="#">Another action</a></li>
+  <li><a class="dropdown-item" href="inserir.php">INSERIR</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">SEARCH</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -70,15 +70,21 @@ color: black;
 <img src="grillo22.png" class="img-thumbnail"  width="90%" alt="...">
   </div>
     <div class="col-lg-6">
-<h3> HiGLIGHTS PORRADA</h3>
+<h3> HiGLIGHTS PORRADAO</h3>
+<p class="fonte_texto"> Tudo muito sinistro, o melhor de acordo com meu prorprio gosto,
+tudo muito fodao, musicas, highlights, a vida como deve ser, tudo extraido do youtube.
+Free sempre</p>
+<p class="fonte_texto">
 
-
-
+O negocio e ser free, cara cloud da forma que hoje usam, voce paga tudo... por isso uso o que tem, o que
+expandi, olha essa web 3.0 e  tudo estar conectado, o youtube ja disponibilliza o
+incorporar mais no codigo ainda.. 
+</p>
 </div>
   </div>
   <div class="row">
     <div class="col-lg-6">
-<h3> O MELHORES HIGLIGTHS E...</h3>
+<h3> OS MELHORES HIGLIGTHS E...</h3>
 <p class="fonte_texto">
 
 
@@ -98,18 +104,16 @@ color: black;
 
 
 
-include("controler.php");
-include("db.php");
-include("view.php");
+include "controler.php";
+include "db.php";
+include "view.php";
 
 
 
 $oi = new Controller();
-$oi->exibir_index($conn);
+$oi->exibir($conn);
 $ui = new View();
-$ui->exibir_index();
-
-
+$ui->searchexibir();
 ?>
 
     </div>
@@ -122,7 +126,9 @@ $ui->exibir_index();
 
     </div>
   </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
   </body>
 </html>
 

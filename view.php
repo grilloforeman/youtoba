@@ -3,14 +3,8 @@
 
     public function searchexibir()
     {
-        echo '<h1>FODAO</h1>'; 
-        
-      
+        echo '<h1>FODAO</h1>';
        }
-        
-    
-        
-      
  }
 
 
