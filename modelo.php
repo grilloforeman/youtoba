@@ -167,7 +167,7 @@ Class Search
       }
      foreach ($resultados as $resultado) {
       preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $resultado["nome"], $match);
-         echo   "<div class=\"card\" my-5 style=\"width: 21rem;\">
+         echo   "<div class=\"card\" mx-auto my-5 style=\"width: 450px;\">
          <img class=\"card-img-top\" src=http://img.youtube.com/vi/{$match[1]}/0.jpg alt=\"Card image cap\">
          <div class=\"card-body\">
            <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card1\'s content.</p>
@@ -195,7 +195,7 @@ Class Exibirindex
       public static function Exibir($pSearch1, $exibir)
 
    {
-     $sql = "SELECT nome FROM videos where tag1 LIKE '%$pSearch1%'";
+     $sql = "SELECT nome FROM videos where tag2='music'";
      $resultado_login1 = mysqli_query($exibir, $sql) or die("Erro no banco de dados!");
     if  ($resultado_login1->num_rows > 0){
       $resultados = array();
@@ -204,12 +204,12 @@ Class Exibirindex
       }
      foreach ($resultados as $resultado) {
       preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $resultado["nome"], $match);
-         echo   "<div class=\"card\" style=\"width: 21rem;\">
+         echo   "<div class=\"card\" style=\"width: 400px;\">
          <img class=\"card-img-top\" src=http://img.youtube.com/vi/{$match[1]}/0.jpg alt=\"Card image cap\">
          <div class=\"card-body\">
            <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card1\'s content.</p>
          </div>
-          <a href={$resultado["nome"]}> link</a>
+          <a href=exibir.php?tar={$resultado["nome"]}> link</a>
        </div>
        </br>" . '</br>';
       } 

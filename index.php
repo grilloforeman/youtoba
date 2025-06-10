@@ -3,11 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
     <title>YOUTOBA</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+ footer {
+            background-color: #333; /* Cor de fundo escura */
+            color: #fff; /* Cor do texto clara */
+            padding: 20px; /* Espaçamento interno */
+            text-align: center; /* Alinha o texto ao centro */
+            margin-top: 50px; /* Adiciona um espaço acima do rodapé para separá-lo do conteúdo */
+            font-family: Arial, sans-serif; /* Fonte legível */
+            font-size: 0.9em; /* Tamanho da fonte um pouco menor */
+        }
+
+
+
+
+
+
+
 
 h3 {
 font-family: "Roboto Condensed", serif;
@@ -17,7 +41,7 @@ color: black;
 
 .fonte_texto {
 font-family: "Oswald", serif;
-font-size: 24px;
+font-size: 20px;
 color: black;
 }
 </style>
@@ -32,13 +56,13 @@ color: black;
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.htm">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">FIGHTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="live.html">AO VIVO</a>
+          <a class="nav-link" href="http://www.marchaprajesus.com.br/live.html">AO VIVO</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,8 +71,15 @@ color: black;
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#"></a></li>
   <li><a class="dropdown-item" href="inserir.php">INSERIR</a></li>
+<li><a class="dropdown-item" href="https://www.grilloforemancloud.com">CLOUD_Gratis</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">SEARCH</a></li>
+            <li><a class="dropdown-item" href="player-music/index.html">MUSIC</a></li>
+ <li><a class="dropdown-item" href="calculadora.html">CALCULADORA</a></li>
+ <li><a class="dropdown-item" href="ott.pdf">puff_GRILLO</a></li>
+ <li><a class="dropdown-item" href="screen.mp4">puff_GRILLO_video</a></li>
+<li><a class="dropdown-item" href="mundo.pdf">mundo_I_EU</a></li>
+
+
           </ul>
         </li>
         <li class="nav-item">
@@ -64,42 +95,162 @@ color: black;
 </nav>
 
 
-<div class="container text-center">
+<div class="container">
   <div class="row">
     <div class="col-lg-6">
-<img src="grillo22.png" class="img-thumbnail"  width="90%" alt="...">
+<img src="Gemini_post_punk.jpg" class="img-thumbnail"  style="border: none;" width="410px" alt="...">
   </div>
     <div class="col-lg-6">
-<h3> HiGLIGHTS PORRADAO</h3>
-<p class="fonte_texto"> Tudo muito sinistro, o melhor de acordo com meu prorprio gosto,
-tudo muito fodao, musicas, highlights, a vida como deve ser, tudo extraido do youtube.
-Free sempre</p>
+<h3> HiGLIGHTS MOVIES</h3>
 <p class="fonte_texto">
 
-O negocio e ser free, cara cloud da forma que hoje usam, voce paga tudo... por isso uso o que tem, o que
-expandi, olha essa web 3.0 e  tudo estar conectado, o youtube ja disponibilliza o
-incorporar mais no codigo ainda.. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+A sociedade que nao quero entender, a vida vai além de muitos e alguns que fazem e, o controle
+realmente existe e os lados lutando cada um com suas vontandes e desejos e meios pelos quais,
+quando jovem algo maior que ser o que todos desejam, tenho nas memórias o pato a holadesa nadando,
+algo não desista, algo que você é, tudo é verdade e talvez nao consiga ver ou entendeu, talvez voce
+realmente seja chato, talvez tenha aprendido a fazer piadas, talvez tenha aprendido a saber provocar,
+talvez de alguma forma ser admirado a ser odiado, a fazer,  as pessoas  escutarem, e você. Eu curto
+um som realmente, mais cada coisa  e suas obrigações, eletrônica e post punk, com o que eu ja sou
+e sei de outros camaradas e o que  a vida, a arte e estando próxima dela realmente existe o marketing,
+antes mais agora menos, e cada youtuber assim por diante, tenham entendimento e algo além de ser
+famoso.
+</p>
+<p>
+<p class="fonte_texto">
+Hoje está muito claro tudo..
+
 </p>
 </div>
   </div>
   <div class="row">
     <div class="col-lg-6">
 <h3> OS MELHORES HIGLIGTHS E...</h3>
-<p class="fonte_texto">
-
-
 </br>
+//////////
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 10px;">
+<div class="youtube-card">
+  <form action="search.php" method="post">
+    <input type="hidden" name="search" value="helicoptero">
+    <div class="channel">HELICOpterO</div>
 
 
 
-</p>
 
-    <div class="col-lg-6">
+
+    <button type="submit" class="overlay-button" aria-label="Assistir Vídeo Título do Seu Vídeo Incrível"></button>
+  </form>
+</div>
+  <a href="https://www.youtube.com/seucanal" class="subscribe-link">Inscreva-se no Canal</a>
+
 </div>
 
+<style>
+.youtube-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 20px;
+  position: relative; /* Essencial para o botão de overlay */
+}
+
+.youtube-card form {
+  display: flex; /* Garante que o formulário não interfere no layout */
+  position: relative;
+  height: 100%;
+}
+
+.youtube-card .thumbnail {
+  width: 100%;
+  height: 180px; /* Altura fixa para a miniatura */
+  background-size: cover;
+  background-position: center;
+}
+
+.youtube-card .title {
+  font-weight: bold;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+.youtube-card .channel {
+  color: #555;
+  padding: 0 10px 10px;
+  font-size: 0.9em;
+}
+
+.youtube-card .overlay-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent; /* Torna-o invisível */
+  border: none;
+  cursor: pointer;
+  z-index: 10; /* Garante que ele esteja acima de outros elementos */
+  font-size: 0; /* Esconde o texto do botão visualmente */
+}
+
+.youtube-card .overlay-button:focus {
+  outline: 2px solid blue; /* Indicador de foco para acessibilidade */
+}
+
+/* Novo estilo para o link de inscrição */
+.subscribe-link {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.subscribe-link:hover {
+  background-color: darkred;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////
 </div>
-<div class="container text-center">
-  <div class="row">
+</div>
+    <div class="container">
+<div class="row">
   <?php
 
 
@@ -111,25 +262,40 @@ include "view.php";
 
 
 $oi = new Controller();
-$oi->exibir($conn);
+$oi->exibir_index($conn);
 $ui = new View();
 $ui->searchexibir();
 ?>
-
+</div>
     </div>
-  </div>
-    </div>
-    </div>
-  </div>
-    </div>
-    <div class="col-12">
+</div>
+    <div class="col-lg-12">
 
     </div>
   </div>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
-  </body>
+<footer>
+        <p>&copy; 2025 GRILloForeman. Todos os direitos reservados</p>
+        <p>
+            <a href="politica-privacidade.html">Política de Privacidade</a> |
+            <a href="termos-de-uso.html">Termos de Uso</a> |
+            <a href="contato.html">Contato</a>
+        </p>
+        <div class="social-icons">
+            <a href="https://facebook.com/seusite" target="_blank">Facebook</a>
+            <a href="https://instagram.com/seusite" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+ </body>
 </html>
 
 

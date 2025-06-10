@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: *.php$
+Disallow: db.php
