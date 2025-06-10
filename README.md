@@ -17,3 +17,10 @@ Os hacker em sua origem tem distincao, os que desejam reconhecimento, os ativist
 O cenario que vejo que muitos nao sabem fazer o proprio cenario, o que aconetece que saibam pouco
 sobre o que fazem, muito conceitos na programcao foram desenvolvidos o que faz que sabe fazer rodar
 o algum scan é muito pouco
+
+Atualizei coloquei como index.php esta sendo, e por music na modelo.php, caso deseje ver entre no modelo.php
+e busque por music.
+
+O exibir.php foi trabalhado na url por get onde pega dei o o nome de tar, nao pega por um importe
+ou seja no php include ou require, e trabalhado e tar no modelo.php na class Search do metodo 
+Exibir... tem que fazer o camelcase obsobsobsobsosbosbosbosbo. olha a maldade..
