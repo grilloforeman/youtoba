@@ -14,7 +14,7 @@ class Controller
 
 
         //PEga os dados  a Model para que seja realizado a validadao
-        $verrr = Search::Exibir("$search", "$search", $exibir);
+        $verrr = Search::exibir("$search", "$search", $exibir);
      }
 
 
@@ -26,7 +26,7 @@ class Controller
 
 
 
-$verrr = Exibirindex::Exibir("", $exibir);          
+$verrr = Exibirindex::exibir("", $exibir);          
       }
 
 
@@ -41,7 +41,7 @@ $pegartag2 = $_POST['tag2'];
 
 $tuba = new Tuba($pegarid, $pegarurl, $pegartag, $pegartag2);
 
-Tubabd::Inserir($tuba, $exibir);
+Tubabd::inserir($tuba, $exibir);
 
 
 
