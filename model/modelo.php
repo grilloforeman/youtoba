@@ -53,7 +53,7 @@ class Usera
 
 class Teste {
 
-public static function Verificar(Usera $pUsera){
+public static function verificar(Usera $pUsera){
 
 return $pUsera->getId();
 
@@ -70,7 +70,7 @@ class Bada
 
 {
 
-public static function Inserir(Usera $pUsera, $exibir)
+public static function inserir(Usera $pUsera, $exibir)
 
    {
 
@@ -133,7 +133,7 @@ Class Tubabd
 
 {
 
-   public static function Inserir(Tuba $pTuba, $exibirr)
+   public static function inserir(Tuba $pTuba, $exibirr)
    {
      $sql = "INSERT INTO videos (id, nome, tag1, tag2) VALUES ('{$pTuba->getId()}', '{$pTuba->getNome()}', '{$pTuba->getTag1()}', '{$pTuba->getTag2()}')";
        if (mysqli_query($exibirr, $sql))
@@ -155,7 +155,7 @@ Class Search
 
 {
 
-      public static function Exibir($pSearch1, $pSearch2, $exibir)
+      public static function exibir($pSearch1, $pSearch2, $exibir)
 
    {
      $sql = "SELECT nome FROM videos where tag1 LIKE '%$pSearch1%' OR tag2 LIKE '%$pSearch2%'";
@@ -192,7 +192,7 @@ Class Exibirindex
 
 {
 
-      public static function Exibir($pSearch1, $exibir)
+      public static function exibir($pSearch1, $exibir)
 
    {
      $sql = "SELECT nome FROM videos where tag2='music'";
