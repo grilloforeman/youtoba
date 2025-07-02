@@ -4,7 +4,7 @@ include "db.php";
 class Controller 
 {
 
-
+	
     public function exibir($exibir) 
     {
 
