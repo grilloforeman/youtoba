@@ -107,9 +107,11 @@ $acao = $_POST['url'] ?? null;
 
 if(isset($acao)){
 
-include "controler.php";
 include "db.php";
-include "view.php";
+define('APP_ROOT', dirname(__DIR__) . '/youtoba');
+   require_once APP_ROOT . '/controller/controler.php';
+   require_once APP_ROOT . '/model/modelo.php';
+require_once APP_ROOT . '/view/view.php';
 
 
 
